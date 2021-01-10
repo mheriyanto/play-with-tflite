@@ -1,0 +1,33 @@
+# TeX: https://github.com/github/gitignore/blob/master/TeX.gitignore
+
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+*.fdb_latexmk
+*.gz
+
+# C++: https://github.com/github/gitignore/blob/master/C%2B%2B.gitignore
+
+## Folder
+build/
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+*.app
