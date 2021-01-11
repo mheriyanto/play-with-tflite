@@ -1,5 +1,5 @@
 # play-with-coral
-Repository for implementation Raspberry Pi + Google Edge TPU USB Accelerator and Google Coral Dev Board to develop AI apps.
+Repository for implementation Raspberry Pi + Google Edge TPU USB Accelerator to develop AI apps: **Face recognition**.
 
 ## Tools
 ### Hardware
@@ -16,5 +16,14 @@ Repository for implementation Raspberry Pi + Google Edge TPU USB Accelerator and
 
 ## Getting Started
 
+
+# Credit to
++ Face recognition with Coral EdgeTPU Support based on MobileFacenet by
+zye1996: https://github.com/zye1996/Mobilefacenet-TF2-coral_tpu
++ License Place Recognition with Google Coral TPU by zye1996: https://github.com/zye1996/edgetpu_ssd_lpr
+
 ## Reference
 + Coral's GitHub: https://github.com/google-coral
++ Paper: [MobileFaceNets: Efficient CNNs for Accurate Real-Time Face Verification on Mobile Devices](https://arxiv.org/abs/1804.07573)
+
+
