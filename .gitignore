@@ -16,18 +16,26 @@
 *.fdb_latexmk
 *.gz
 
-# C++: https://github.com/github/gitignore/blob/master/C%2B%2B.gitignore
+# Python: https://github.com/github/gitignore/blob/master/Python.gitignore
 
-## Folder
+## Distribution / packaging
 build/
+dist/
+MANIFEST
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+## PyInstaller
+*.manifest
+*.spec
 
-# Executables
-*.exe
-*.out
-*.app
+## Unit test / coverage reports
+.tox/
+
+## Flask stuff:
+instance/
+.webassets-cache
+
+## Environments
+.env
+.venv
+env/
+venv/
