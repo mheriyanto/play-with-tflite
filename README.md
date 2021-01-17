@@ -13,8 +13,8 @@ Repository for implementation Raspberry Pi + Google Edge TPU USB Accelerator to 
 
 ## Tools
 ### Tested Hardware
-+ RasberryPi 3 Model B [here](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/), RAM: **4 GB** and Processor **4-core @ 1.2 GHz** 
-+ microSD Card **16 GB**
++ RasberryPi 4 Model B [here](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/), RAM: **4 GB** and Processor **4-core @ 1.5 GHz** 
++ microSD Card **64 GB**
 + Google Edge TPU USB Accelerator [here](https://coral.ai/products/accelerator)
 + 5M USB Retractable Clip 120 Degrees WebCam Web Wide-angle Camera Laptop U7 Mini or [Raspi Camera](https://www.raspberrypi.org/documentation/hardware/camera/)
 
