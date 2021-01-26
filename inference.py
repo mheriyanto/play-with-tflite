@@ -3,7 +3,6 @@ import re
 
 import cv2
 from tflite_runtime.interpreter import Interpreter
-from PIL import Image
 
 from datetime import datetime
 import time
@@ -83,7 +82,6 @@ def annotate_objects(img, results, labels):
         ymax = int(ymax * CAMERA_HEIGHT)
 
         # Overlay the box, label, and score on the camera preview
-        # annotator.bounding_box([xmin, ymin, xmax, ymax])
         c1, c2 = (xmin, ymin), (xmax, ymax)
         cv2.rectangle(img, c1, c2, (0, 0, 255), thickness=2)     # Rectangle Object
 
@@ -94,7 +92,6 @@ def annotate_objects(img, results, labels):
             tf = max(tl - 1, 1)  # font thickness
             t_size = cv2.getTextSize(label, 0, fontScale=tl/5, thickness=tf)[0]
             c2 = c1[0] + t_size[0], c1[1] - t_size[1] - 3
-            # annotator.text([xmin, ymin], '%s\n%.2f' % (labels[obj['class_id']], obj['score']))
             cv2.rectangle(img, c1, c2, (0, 0, 255), -1, cv2.LINE_AA)  # filled
             cv2.putText(img, label, (c1[0], c1[1] - 2), 0, tl/5, (255, 255, 255), thickness=int(tf), lineType=cv2.LINE_AA)
 
