@@ -26,28 +26,21 @@ Repository for implementation Raspberry Pi + Google Edge TPU USB Accelerator to 
 
 ## Getting Started
 
-+ Edge TPU runtime
-
-```console
-$ echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | sudo tee /etc/apt/sources.list.d/coral-edgetpu.list
-$ curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
-$ sudo apt update
-$ sudo apt upgrade
-```
-
-+ Install the Edge TPU runtime
-
-```console
-$ sudo apt install libedgetpu1-std
-```
-
 + Install TensorFlow Lite library (TensorFlow Lite APIs Python)
 
 ```console
 $ pip3 install https://github.com/google-coral/pycoral/releases/download/release-frogfish/tflite_runtime-2.5.0-cp37-cp37m-linux_armv7l.whl
 ```
 
-# Credit to
+## Usage
+
+```console
+$ git clone https://github.com/mheriyanto/play-with-coral.git
+$ cd play-with-coral
+$ python3 inference.py --source /dev/video0 --model weight/coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.tflite --labels weight/coco_labels.txt
+```
+
+## Credit to
 + Face recognition with Coral EdgeTPU Support based on MobileFacenet by
 zye1996: https://github.com/zye1996/Mobilefacenet-TF2-coral_tpu
 + License Place Recognition with Google Coral TPU by zye1996: https://github.com/zye1996/edgetpu_ssd_lpr
