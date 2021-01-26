@@ -7,6 +7,7 @@ from tflite_runtime.interpreter import Interpreter
 from datetime import datetime
 import time
 import numpy as np
+import imageio
 
 from flask import Flask, render_template, Response
 
@@ -109,6 +110,10 @@ def generate(opt):
 
     cctv = opt.source
     cap = cv2.VideoCapture(cctv)
+
+    # save frame to GIF
+    start_get_frame = start_time
+    image_gif = []
     while True:
         ret, frame = cap.read()
         if ret:
@@ -141,6 +146,14 @@ def generate(opt):
                 text = "{}: {}".format(k, v)
                 cv2.putText(frame, text, (int(x_text), int(y_text) - ((i1 * 20) + 20)),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
+
+            time_get_frame = time.time() - start_get_frame 
+            if time_get_frame < 3: # 3 seconds for getting frame
+                image_gif.append(frame)
+            elif time_get_frame >= 3 and time_get_frame < 3.1:
+                imageio.mimsave('docs/output.gif', image_gif, fps=fps_var)
+            else:
+                print('finished to get GIF from frame for 3 seconds')
 
             frame = cv2.imencode('.jpg', frame)[1].tobytes()
             yield (b'--frame\r\n'
