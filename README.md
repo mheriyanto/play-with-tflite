@@ -19,9 +19,9 @@ Repository for implementation Raspberry Pi + Google Edge TPU USB Accelerator to 
 + 5M USB Retractable Clip 120 Degrees WebCam Web Wide-angle Camera Laptop U7 Mini or [Raspi Camera](https://www.raspberrypi.org/documentation/hardware/camera/)
 
 ###  Tested Software
-+ OS Raspbian 10 (Buster) 32 bit [**armv7l**](https://downloads.raspberrypi.org/raspios_armhf/images/raspios_armhf-2020-12-04/2020-12-02-raspios-buster-armhf.zip), install on RaserriPi 4
-+ Edge TPU runtime
++ OS Raspbian 10 (Buster) 32 bit [**armv7l**](https://downloads.raspberrypi.org/raspios_armhf/images/raspios_armhf-2020-12-04/2020-12-02-raspios-buster-armhf.zip), install on RasberriPi 4
 + TensorFlow Lite library
++ Edge TPU runtime
 + Python min. ver. 3.5 (**3.7** recommended)
 
 ## Getting Started
