@@ -38,7 +38,11 @@ $ pip3 install https://github.com/google-coral/pycoral/releases/download/release
 $ git clone https://github.com/mheriyanto/play-with-coral.git
 $ cd play-with-coral
 $ python3 inference.py --source /dev/video0 --model weight/coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.tflite --labels weight/coco_labels.txt
+
+# Open on your browser and check http://0.0.0.0:5000/
 ```
+
+<img src="https://raw.githubusercontent.com/mheriyanto/play-with-coral/main/docs/output.gif" width="640px" height="480px">
 
 ## Credit to
 + Face recognition with Coral EdgeTPU Support based on MobileFacenet by
