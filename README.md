@@ -32,10 +32,18 @@ $ pip3 install https://github.com/google-coral/pycoral/releases/download/release
 
 ## Usage
 
+## Image Classification
 ```console
-$ git clone https://github.com/mheriyanto/play-with-coral.git
-$ cd play-with-coral
+$ git clone https://github.com/mheriyanto/play-with-tflite.git
+$ cd play-with-tflite
 $ python3 inference.py --source /dev/video0 --model weight/coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.tflite --labels weight/coco_labels.txt
+
+# Open on your browser and check http://0.0.0.0:5000/
+```
+
+## Object Detection
+```console
+$ python3 classify.py --source /dev/video0 --model weight/mobilenet_v1_1.0_224_quant.tflite --labels weight/labels_mobilenet_quant_v1_224.txt
 
 # Open on your browser and check http://0.0.0.0:5000/
 ```
@@ -43,4 +51,6 @@ $ python3 inference.py --source /dev/video0 --model weight/coco_ssd_mobilenet_v1
 <img src="https://raw.githubusercontent.com/mheriyanto/play-with-coral/main/docs/output.gif" width="640px" height="480px">
 
 ## Reference
++ TensorFlow Lite Python classification example with Pi Camera: [TensorFlow Lite example](https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/raspberry_pi)
++ TensorFlow Lite Python object detection example with Pi Camera: [TensorFlow Lite example](https://github.com/tensorflow/examples/tree/master/lite/examples/object_detection/raspberry_pi)
 + Paper: [MobileFaceNets: Efficient CNNs for Accurate Real-Time Face Verification on Mobile Devices](https://arxiv.org/abs/1804.07573)
