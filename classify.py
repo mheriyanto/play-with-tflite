@@ -65,9 +65,9 @@ def generate(opt):
             
             # TODO: Core 
             resize = cv2.resize(frame, (input_width, input_height))
-            results = classify_image(model, frame)
+            results = classify_image(model, resize)
             print("results: ", results)
-            
+
             label_id, prob = results[0]
 
             text = '%s %.2f' % (labels[label_id], prob)
@@ -84,7 +84,7 @@ def generate(opt):
                 start_time = time.time()
 
             info_frame = [
-                ("Object", text)
+                ("Object", text),
                 ("FPS", fps_var),
                 ("Date", now)
             ]
@@ -117,4 +117,4 @@ if __name__ == "__main__":
     opt = parser.parse_args()
 
     app.run(host="0.0.0.0", port=5000, threaded=True)
-    # python3 inference.py --source /dev/video0 --model weight/mobilenet_v1_1.0_224_quant.tflite --labels weight/labels_mobilenet_quant_v1_224.txt
+    # python3 classify.py --source /dev/video0 --model weight/mobilenet_v1_1.0_224_quant.tflite --labels weight/labels_mobilenet_quant_v1_224.txt
