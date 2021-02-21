@@ -8,8 +8,8 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mheriyanto/play-with-coral)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=555)](https://id.linkedin.com/in/mheriyanto)
 
-# play-with-coral
-Repository for implementation Raspberry Pi + Google Edge TPU USB Accelerator to develop AI apps: **Face recognition**.
+# play-with-tflite
+Repository for implementation Raspberry Pi + TensorFlow Lite to develop AI apps: **Face recognition**.
 
 ## Tools
 ### Tested Hardware
@@ -54,3 +54,4 @@ $ python3 classify.py --source /dev/video0 --model weight/mobilenet_v1_1.0_224_q
 + TensorFlow Lite Python classification example with Pi Camera: [TensorFlow Lite example](https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/raspberry_pi)
 + TensorFlow Lite Python object detection example with Pi Camera: [TensorFlow Lite example](https://github.com/tensorflow/examples/tree/master/lite/examples/object_detection/raspberry_pi)
 + Paper: [MobileFaceNets: Efficient CNNs for Accurate Real-Time Face Verification on Mobile Devices](https://arxiv.org/abs/1804.07573)
++ Face Mask Detector (Tensorflow Lite): [GitHub - tanhouren](https://github.com/tanhouren/Face_mask_detector)
