@@ -43,3 +43,4 @@ venv/
 # Folder
 docs/articles/
 dev/
+*.gif
