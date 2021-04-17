@@ -1,4 +1,4 @@
-[![HitCount](http://hits.dwyl.com/mheriyanto/play-with-coral.svg)](http://hits.dwyl.com/mheriyanto/play-with-coral)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmheriyanto%2Fplay-with-tflite&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/mheriyanto/play-with-coral/issues)
 ![GitHub contributors](https://img.shields.io/github/contributors/mheriyanto/play-with-coral)
 ![GitHub last commit](https://img.shields.io/github/last-commit/mheriyanto/play-with-coral)
@@ -8,8 +8,8 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mheriyanto/play-with-coral)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=555)](https://id.linkedin.com/in/mheriyanto)
 
-# play-with-coral
-Repository for implementation Raspberry Pi + Google Edge TPU USB Accelerator to develop AI apps: **Face recognition**.
+# play-with-tflite
+Repository for implementation Raspberry Pi + TensorFlow Lite to develop AI apps: **Face recognition**.
 
 ## Tools
 ### Tested Hardware
@@ -54,3 +54,4 @@ $ python3 classify.py --source /dev/video0 --model weight/mobilenet_v1_1.0_224_q
 + TensorFlow Lite Python classification example with Pi Camera: [TensorFlow Lite example](https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/raspberry_pi)
 + TensorFlow Lite Python object detection example with Pi Camera: [TensorFlow Lite example](https://github.com/tensorflow/examples/tree/master/lite/examples/object_detection/raspberry_pi)
 + Paper: [MobileFaceNets: Efficient CNNs for Accurate Real-Time Face Verification on Mobile Devices](https://arxiv.org/abs/1804.07573)
++ Face Mask Detector (Tensorflow Lite): [GitHub - tanhouren](https://github.com/tanhouren/Face_mask_detector)
