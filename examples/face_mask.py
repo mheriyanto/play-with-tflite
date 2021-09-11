@@ -110,10 +110,10 @@ def video_feed():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--source', type=str, default='/dev/video0', help='path to input source', required=True) # input file/folder, 0 for webcam
-    parser.add_argument('--model', type=str, default='weight/ssd_mobilenet_v2_fpnlite.tflite', help='File path of .tflite file.', required=True)
+    parser.add_argument('--model', type=str, default='../saved/models/ssd_mobilenet_v2_fpnlite.tflite', help='File path of .tflite file.', required=True)
     parser.add_argument('--threshold', type=float, default=0.4, help='Score threshold for detected objects.', required=False)
 
     opt = parser.parse_args()
 
     app.run(host="0.0.0.0", port=5000, threaded=True)
-    # python3 face_mask.py --source /dev/video0 --model weight/ssd_mobilenet_v2_fpnlite.tflite
+    # python3 face_mask.py --source /dev/video0 --model ../saved/models/ssd_mobilenet_v2_fpnlite.tflite

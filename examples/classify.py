@@ -111,10 +111,10 @@ def video_feed():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--source', type=str, default='/dev/video0', help='path to input source', required=True) # input file/folder, 0 for webcam
-    parser.add_argument('--model', type=str, default='weight/mobilenet_v1_1.0_224_quant.tflite', help='File path of .tflite file.', required=True)
-    parser.add_argument('--labels', type=str, default='weight/labels_mobilenet_quant_v1_224.txt', help='File path of labels file.', required=True)
+    parser.add_argument('--model', type=str, default='../saved/models/mobilenet_v1_1.0_224_quant.tflite', help='File path of .tflite file.', required=True)
+    parser.add_argument('--labels', type=str, default='../saved/models/labels_mobilenet_quant_v1_224.txt', help='File path of labels file.', required=True)
 
     opt = parser.parse_args()
 
     app.run(host="0.0.0.0", port=5000, threaded=True)
-    # python3 classify.py --source /dev/video0 --model weight/mobilenet_v1_1.0_224_quant.tflite --labels weight/labels_mobilenet_quant_v1_224.txt
+    # python3 classify.py --source /dev/video0 --model ../saved/models/mobilenet_v1_1.0_224_quant.tflite --labels ../saved/models/labels_mobilenet_quant_v1_224.txt
