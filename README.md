@@ -9,7 +9,7 @@
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=555)](https://id.linkedin.com/in/mheriyanto)
 
 # play-with-tflite
-Repository for implementation Raspberry Pi + TensorFlow Lite to develop AI apps: **Face recognition**.
+Repository for implementation Raspberry Pi + TensorFlow Lite to develop AI apps.
 
 ## Tools
 ### Tested Hardware
@@ -36,19 +36,20 @@ $ pip3 install https://github.com/google-coral/pycoral/releases/download/release
 ```console
 $ git clone https://github.com/mheriyanto/play-with-tflite.git
 $ cd play-with-tflite
-$ python3 inference.py --source /dev/video0 --model weight/coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.tflite --labels weight/coco_labels.txt
+$ cd examples
+$ python3 classify.py --source /dev/video0 --model ../saved/models/mobilenet_v1_1.0_224_quant.tflite --labels ../saved/models/labels_mobilenet_quant_v1_224.txt
 
 # Open on your browser and check http://0.0.0.0:5000/
 ```
 
 ## Object Detection
 ```console
-$ python3 classify.py --source /dev/video0 --model weight/mobilenet_v1_1.0_224_quant.tflite --labels weight/labels_mobilenet_quant_v1_224.txt
+$ python3 detection.py --source /dev/video0 --model ../saved/models/coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.tflite --labels ../saved/models/coco_labels.txt
 
 # Open on your browser and check http://0.0.0.0:5000/
 ```
 
-<img src="https://raw.githubusercontent.com/mheriyanto/play-with-coral/main/docs/output.gif" width="640px" height="480px">
+<img src="https://github.com/mheriyanto/play-with-tflite/blob/main/docs/output.gif" width="640px" height="480px">
 
 ## Reference
 + TensorFlow Lite Python classification example with Pi Camera: [TensorFlow Lite example](https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/raspberry_pi)
