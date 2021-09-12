@@ -9,7 +9,7 @@
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=555)](https://id.linkedin.com/in/mheriyanto)
 
 # play-with-tflite
-Repository for implementation Raspberry Pi + TensorFlow Lite to develop AI apps.
+Repository for implementation Raspberry Pi + TensorFlow Lite to develop AI apps: **Vehicle detection & classification**.
 
 ## Tools
 ### Tested Hardware
